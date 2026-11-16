@@ -1,9 +1,9 @@
 // English content.
 export default {
   nav: ["Home", "About", "Experience", "Projects", "Skills", "Education", "Contact"],
-  role: "Embedded software engineer. Software-defined vehicles and robotics.",
-  goal: "Looking for a full-time role in Paris from September 2027.",
-  cv: "View my resume",
+  role: "Embedded software engineer.",
+  goal: "Looking for a full-time role in the Paris region from September 2027.",
+  cv: "View my CV",
   start: "Follow the signal",
   hint: "Scroll down, or click a component on the board.",
   captions: [

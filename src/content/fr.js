@@ -1,8 +1,8 @@
 // Contenu en français.
 export default {
   nav: ["Accueil", "À propos", "Expériences", "Projets", "Compétences", "Formation", "Contact"],
-  role: "Ingénieur logiciel embarqué. Véhicule défini par logiciel et robotique.",
-  goal: "Je recherche un CDI à Paris à partir de septembre 2027.",
+  role: "Ingénieur logiciel embarqué.",
+  goal: "Je recherche un CDI en région parisienne à partir de septembre 2027.",
   cv: "Voir mon CV",
   start: "Suivre le signal",
   hint: "Faites défiler la page, ou cliquez sur un composant de la carte.",
