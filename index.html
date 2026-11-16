@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lorenzo Baladier | Portfolio</title>
+  <meta name="description" content="Portfolio de Lorenzo Baladier, ingénieur logiciel embarqué : une visite guidée en 3D sur un circuit imprimé.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <header class="bar">
+    <a class="brand" href="#home" data-go="0">Lorenzo Baladier</a>
+    <nav class="nav" id="nav" aria-label="Sections"></nav>
+    <button class="free-toggle" id="free-toggle" aria-pressed="false"></button>
+    <div class="langs" role="group" aria-label="Langue">
+      <button data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="it">IT</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="stop hero" id="home"><div class="intro" id="s-home"></div></section>
+    <section class="stop" id="about"><div class="panel" id="s-about"></div></section>
+    <section class="stop" id="experience"><div class="panel" id="s-experience"></div></section>
+    <section class="stop" id="projects"><div class="panel" id="s-projects"></div></section>
+    <section class="stop" id="skills"><div class="panel" id="s-skills"></div></section>
+    <section class="stop" id="education"><div class="panel" id="s-education"></div></section>
+    <section class="stop" id="contact"><div class="panel" id="s-contact"></div></section>
+  </main>
+
+  <!-- Vue libre : aide, fiche du composant sélectionné et boutons de zoom -->
+  <aside class="free-ui" id="free-ui" hidden>
+    <div class="dock" id="free-dock" aria-live="polite"></div>
+    <div class="zoom" role="group">
+      <button id="zoom-in">+</button>
+      <button id="zoom-out">−</button>
+      <button id="zoom-reset" class="wide"></button>
+    </div>
+  </aside>
+
+  <div id="tip"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

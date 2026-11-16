@@ -1,0 +1,16 @@
+/* Palette et typographie : un circuit violet à finition or, sérigraphie crème. */
+:root {
+  --deep: #120a26;   /* fond, hors de la carte */
+  --mask: #2a1856;   /* vernis épargne */
+  --copper: #4b2f8f; /* pistes sous le vernis */
+  --gold: #e6b450;   /* pastilles et piste du signal */
+  --silk: #f4efe4;   /* sérigraphie, texte */
+  --led: #6ff2c4;    /* état actif */
+  --muted: #c3b9dc;
+  --panel: rgba(20, 11, 44, 0.88);
+  --line: rgba(244, 239, 228, 0.16);
+
+  --display: "Bricolage Grotesque", system-ui, sans-serif;
+  --body: "Instrument Sans", system-ui, sans-serif;
+  --mono: "Martian Mono", ui-monospace, monospace;
+}

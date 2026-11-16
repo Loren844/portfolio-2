@@ -1,0 +1,68 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--deep);
+  color: var(--silk);
+  font-family: var(--body);
+  font-size: 1rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+/* Sans WebGL, le contenu reste lisible sur un fond qui évoque la carte. */
+body.no3d {
+  background:
+    radial-gradient(circle at 70% 30%, rgba(75, 47, 143, 0.55), transparent 55%),
+    repeating-linear-gradient(45deg, transparent 0 38px, rgba(75, 47, 143, 0.25) 38px 40px),
+    var(--deep);
+  background-attachment: fixed;
+}
+a { color: var(--gold); }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--led);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+h1, h2, h3 {
+  font-family: var(--display);
+  margin: 0;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+}
+h2 { font-size: clamp(1.9rem, 4vw, 2.5rem); font-weight: 700; }
+h3 { font-size: 1.12rem; font-weight: 700; letter-spacing: 0; line-height: 1.25; }
+
+#scene { position: fixed; inset: 0; width: 100%; height: 100%; display: block; z-index: 0; }
+
+.btn {
+  font: 600 0.98rem var(--body);
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1.5px solid var(--gold);
+  background: var(--gold);
+  color: var(--deep);
+}
+.btn.ghost { background: rgba(18, 10, 38, 0.6); color: var(--silk); border-color: rgba(244, 239, 228, 0.5); }
+.btn:hover { filter: brightness(1.08); }
+
+/* Étiquette qui suit le pointeur au survol d'un composant */
+#tip {
+  position: fixed;
+  z-index: 6;
+  pointer-events: none;
+  font: 600 0.8rem var(--body);
+  background: var(--silk);
+  color: var(--deep);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transform: translate(14px, 14px);
+  opacity: 0;
+  transition: opacity 0.12s;
+}
+#tip.show { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
