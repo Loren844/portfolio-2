@@ -117,7 +117,7 @@ export function createBoard(renderer, parent, materials, labels) {
     g.textAlign = "left";
     g.font = mono(30);
     g.fillText("J1  5V", px(-24.4), pz(5.6));
-    g.fillText("LB-PORTFOLIO  REV 2  2026", px(9), pz(15.6));
+    g.fillText("LB-PORTFOLIO  REV 2", px(9), pz(15.6));
 
     texture.needsUpdate = true;
   }

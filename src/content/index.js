@@ -1,11 +1,10 @@
 // Données du portfolio. Pour mettre le site à jour, il suffit en général
-// de modifier ce dossier : les textes par langue (fr.js, en.js, it.js)
+// de modifier ce dossier : les textes par langue (fr.js, en.js)
 // et, ici, tout ce qui ne se traduit pas.
 import fr from "./fr.js";
 import en from "./en.js";
-import it from "./it.js";
 
-export const CONTENT = { fr, en, it };
+export const CONTENT = { fr, en };
 export const DEFAULT_LANG = "fr";
 
 // Une section = un arrêt de la visite = un composant sur la carte.

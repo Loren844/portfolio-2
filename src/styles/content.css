@@ -1,6 +1,15 @@
 /* Accueil */
 .stop.hero { align-items: flex-end; padding-bottom: 9vh; }
-.intro { pointer-events: auto; max-width: 36rem; }
+.intro {
+  pointer-events: auto;
+  max-width: 36rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid rgba(230, 180, 80, 0.2);
+  border-radius: 0.8rem;
+  background: rgba(18, 10, 38, 0.48);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
 h1 {
   font-size: clamp(3rem, 9.5vw, 6.6rem);
   font-weight: 700;

@@ -71,7 +71,7 @@ export default {
     },
     {
       title: "Portfolio interactif",
-      text: "Un portfolio en forme de terminal, en français, anglais et italien.",
+      text: "Un portfolio en forme de terminal, disponible en français et en anglais.",
     },
     {
       title: "Application mobile Android",

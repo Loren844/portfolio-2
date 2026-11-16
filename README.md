@@ -27,7 +27,7 @@ Deux façons de se déplacer :
 | --- | --- |
 | ![Section Projets, avec les huit LED](docs/projets.jpg) | ![Vue libre, carte entière](docs/vue-libre.jpg) |
 
-Le site est disponible en français, en anglais et en italien. Sans WebGL, le contenu reste entièrement lisible ; avec l'option système « réduire les animations », la caméra se déplace sans transition.
+Le site est disponible en français et en anglais. Sans WebGL, le contenu reste entièrement lisible ; avec l'option système « réduire les animations », la caméra se déplace sans transition.
 
 ## Lancer le projet
 
@@ -49,7 +49,7 @@ src/
   i18n.js               langue courante
   content/              tout le contenu du portfolio
     index.js            liens, compétences, ordre des sections
-    fr.js  en.js  it.js textes par langue
+    fr.js  en.js      textes par langue
   ui/
     sections.js         rendu HTML des sections
     tour.js             défilement -> position dans la visite
